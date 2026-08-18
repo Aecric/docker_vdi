@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=深信服 VDI
+Name[zh_CN]=深信服 VDI
+Comment=启动 Ubuntu 20.04 Docker 中的深信服 VDI 客户端
+Comment[zh_CN]=启动 Ubuntu 20.04 Docker 中的深信服 VDI 客户端
+Exec=sh -lc "exec sangfor-vdi"
+Icon=sangfor-vdi
+Terminal=true
+StartupNotify=true
+Categories=Network;RemoteAccess;

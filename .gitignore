@@ -1,0 +1,28 @@
+# Vendor installers and exported container images must stay local.
+*.deb
+*.tar
+*.tar.gz
+*.tgz
+
+# Local configuration and secrets.
+.env
+.env.*
+!.env.example
+compose.override.yaml
+docker-compose.override.yml
+
+# Runtime logs, crash dumps, and temporary files.
+*.log
+core
+core.*
+*.dmp
+*.pid
+*.lock
+*.tmp
+*~
+
+# Editor and OS metadata.
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

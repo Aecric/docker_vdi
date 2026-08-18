@@ -1,0 +1,4 @@
+*
+!Dockerfile
+!docker-entrypoint.sh
+!vdi-linux-client-x86_64-ubuntu.deb

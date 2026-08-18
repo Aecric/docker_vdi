@@ -1,0 +1,18 @@
+services:
+  sangfor-vdi:
+    build:
+      context: .
+      args:
+        VDI_UID: ${VDI_UID:-1000}
+        VDI_GID: ${VDI_GID:-1000}
+    image: sangfor-vdi:ubuntu20.04
+    mac_address: "02:42:ac:12:00:02"
+    environment:
+      DISPLAY: ${DISPLAY}
+      QT_X11_NO_MITSHM: "1"
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - vdi-home:/home/vdi
+
+volumes:
+  vdi-home:
